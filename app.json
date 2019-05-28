@@ -1,0 +1,19 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "Python"
+    }
+  ],
+  "description": "Heroku",
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "coffee_powered_coder",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}

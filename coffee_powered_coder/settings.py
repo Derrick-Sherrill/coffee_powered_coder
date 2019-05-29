@@ -4,25 +4,22 @@ import django_heroku
 import dj_database_url
 import psycopg2
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
 
 
-# Quick-start development settings - unsuitable for production
+
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'lq+r@i(3@dk0yq2_j5nnf_=0n1vtd&u8f(&&8pw!4_b@*-a7vm'
 
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ['coffee-powered-coder.herokuapp.com','127.0.0.1']
 
-
 # Application definition
-
 INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'certifications.apps.CertificationsConfig',
@@ -101,13 +98,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'UTC'
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 

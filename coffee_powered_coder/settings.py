@@ -29,7 +29,7 @@ SECRET_KEY = 'lq+r@i(3@dk0yq2_j5nnf_=0n1vtd&u8f(&&8pw!4_b@*-a7vm'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['coffee-powered-coder.herokuapp.com']
+ALLOWED_HOSTS = ['coffee-powered-coder.herokuapp.com','127.0.0.1']
 
 
 # Application definition

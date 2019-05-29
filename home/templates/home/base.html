@@ -11,7 +11,7 @@
   {% load static %}
   <!---    NAVBAR SECTION   --->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark style=background-color: #1F2833;">
-    <a class="navbar-brand" href="#"><img src="{% static 'home/CPC_logo_Vector.png' %}" alt="Welcome to CPC" style="height:50px; width=auto;"></a>
+    <a class="navbar-brand" href="{% url 'home' %}"><img src="{% static 'home/CPC_logo_Vector.png' %}" alt="Welcome to CPC" style="height:50px; width=auto;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -19,13 +19,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Certifications</a>
+          <a class="nav-link" href="{% url 'certifications_home' %}">Certifications</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Courses</a>
+          <a class="nav-link" href="{% url 'courses_home' %}">Courses</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -35,7 +35,7 @@
             <a class="dropdown-item" href="#">Python</a>
             <a class="dropdown-item" href="#">Django</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Archive</a>
+            <a class="dropdown-item" href="{% url 'tutorials_home' %}">Archive</a>
           </div>
         </li>
       </ul>

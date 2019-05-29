@@ -3,5 +3,5 @@ from django.urls import path
 from certifications import views
 
 urlpatterns = [
-    path(),
+    path('', views.index, name='certifications_home'),
 ]

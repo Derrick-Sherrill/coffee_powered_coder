@@ -17,7 +17,7 @@ SECRET_KEY = 'lq+r@i(3@dk0yq2_j5nnf_=0n1vtd&u8f(&&8pw!4_b@*-a7vm'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['coffee-powered-coder.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['coffee-powered-coder.herokuapp.com','127.0.0.1', 'www.coffeepoweredcoder.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -108,4 +108,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'home/static/home'),
+]

@@ -8,3 +8,6 @@ def index(request):
 
 def python_home(request):
     return render(request, 'tutorials/python.html')
+
+def whylearnpython(request):
+    return render(request, 'tutorials/python/WhyLearnPython.html')

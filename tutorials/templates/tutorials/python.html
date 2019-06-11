@@ -3,7 +3,7 @@
 {% block content %}
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Python Tutorials</h1>
+    <h1 class="display-4">Python Beginner Tutorials</h1>
     <p class="lead">Python, an object-oriented programming language is known for its versatility and availability. If you're looking to pick up a programming language quickly for prototyping and full scale development, Python is the way to go</p>
   </div>
 </div>
@@ -45,7 +45,7 @@
     <div class="col-md-6">
       <div class="col-sm-12">
         <div class="media-body">
-          <a href="{% url 'why_learn_python' %}"><h5 class="mt-0">Let's Learn: Python Syntax</h5></a>
+          <a href="{% url 'python_syntax' %}"><h5 class="mt-0">Let's Learn: Python Syntax</h5></a>
         Let's start off with the syntax of python!
         </div>
       </div>
@@ -60,7 +60,7 @@
       <div class="col-sm-12">
         <div class="media">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" alt="Python Syntax" src="https://www.youtube.com/embed/bc4b8RqtW8k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" alt="Python Variables and Data Types" src="https://www.youtube.com/embed/bc4b8RqtW8k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -68,7 +68,7 @@
     <div class="col-md-6">
       <div class="col-sm-12">
         <div class="media-body">
-          <a href="{% url 'why_learn_python' %}"><h5 class="mt-0">Let's Learn: Python Variables and Syntax</h5></a>
+          <a href="{% url 'python_variables_dtypes' %}"><h5 class="mt-0">Let's Learn: Python Variables and Data Types</h5></a>
             Let's continue on with Python Variables and syntax
         </div>
       </div>
@@ -91,7 +91,7 @@
     <div class="col-md-6">
       <div class="col-sm-12">
         <div class="media-body">
-          <a href="{% url 'why_learn_python' %}"><h5 class="mt-0">Let's Learn: Python Composite Data Types</h5></a>
+          <a href="{% url 'python_composite_dtypes' %}"><h5 class="mt-0">Let's Learn: Python Composite Data Types</h5></a>
             Let's continue on with a follow up on data type objects - composite data types!
         </div>
       </div>
@@ -114,7 +114,7 @@
     <div class="col-md-6">
       <div class="col-sm-12">
         <div class="media-body">
-          <a href="{% url 'why_learn_python' %}"><h5 class="mt-0">Let's Learn: Python Strings</h5></a>
+          <a href="{% url 'python_strings' %}"><h5 class="mt-0">Let's Learn: Python Strings</h5></a>
             Let's talk about python strings.
         </div>
       </div>
@@ -122,138 +122,194 @@
   </div>
 </div>
 <br>
-<div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <div class="media">
-          <iframe class="align-self-center mr-3" alt="Python Strings" width="448" height="252" src="https://www.youtube.com/embed/O1VGBZ6wvPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="media-body">
-            <h5 class="mt-0">Let's Learn: Python Strings</h5>
-              Python
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-<br>
 <!---- Begin: Python Numbers Section --->
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col-sm-12">
         <div class="media">
-          <iframe class="align-self-center mr-3" alt="Python Numbers" width="448" height="252" src="https://www.youtube.com/embed/HraodvyUjkU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="media-body">
-            <h5 class="mt-0">Let's Learn: Python Numbers</h5>
-              Python
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Python Numbers" src="https://www.youtube.com/embed/HraodvyUjkU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="col-sm-12">
+        <div class="media-body">
+          <a href="{% url 'python_numbers' %}"><h5 class="mt-0">Let's Learn: Python Numbers</h5></a>
+            Let's talk about python numbers.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <br>
+
 <!---- Begin: Python Lists Section --->
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col-sm-12">
         <div class="media">
-          <iframe class="align-self-center mr-3" alt="Python Lists" width="448" height="252" src="https://www.youtube.com/embed/Qexx6ed_598" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="media-body">
-            <h5 class="mt-0">Let's Learn: Python Lists</h5>
-              Python
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Python Lists" src="https://www.youtube.com/embed/Qexx6ed_598" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="col-sm-12">
+        <div class="media-body">
+          <a href="{% url 'python_lists' %}"><h5 class="mt-0">Let's Learn: Python Lists</h5></a>
+            Let's talk about python lists.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <br>
 <!---- Begin: Python Tuples Section --->
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col-sm-12">
         <div class="media">
-          <iframe class="align-self-center mr-3" alt="Python Lists" width="448" height="252" src="https://www.youtube.com/embed/hloqiXe5bF0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="media-body">
-            <h5 class="mt-0">Let's Learn: Python Tuples</h5>
-              Python
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Python Tuples" src="https://www.youtube.com/embed/hloqiXe5bF0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="col-sm-12">
+        <div class="media-body">
+          <a href="{% url 'python_tuples' %}"><h5 class="mt-0">Let's Learn: Python Tuples</h5></a>
+            Let's talk about python tuples.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <br>
 <!---- Begin: Python Sets Section --->
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col-sm-12">
         <div class="media">
-          <iframe class="align-self-center mr-3" alt="Python Sets" width="448" height="252" src="https://www.youtube.com/embed/_ReXOofL-c4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="media-body">
-            <h5 class="mt-0">Let's Learn: Python Sets</h5>
-              Python
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Python Sets" src="https://www.youtube.com/embed/_ReXOofL-c4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="col-sm-12">
+        <div class="media-body">
+          <a href="{% url 'why_learn_python' %}"><h5 class="mt-0">Let's Learn: Python Sets</h5></a>
+            Let's talk about python sets.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <br>
+
 <!---- Begin: Python Dictionaries Section --->
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col-sm-12">
         <div class="media">
-          <iframe class="align-self-center mr-3" alt="Python Dictionaries" width="448" height="252" src="https://www.youtube.com/embed/MGJGHni8Vm4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="media-body">
-            <h5 class="mt-0">Let's Learn: Python Dictionaries</h5>
-              Python
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Python Dictionaries" src="https://www.youtube.com/embed/MGJGHni8Vm4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="col-sm-12">
+        <div class="media-body">
+          <a href="{% url 'python_dictionaries' %}"><h5 class="mt-0">Let's Learn: Python Dictionaries</h5></a>
+            Let's talk about python dictionaries.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <br>
 <!---- Begin: Python If Statements Section --->
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col-sm-12">
         <div class="media">
-          <iframe class="align-self-center mr-3" alt="Python Dictionaries" width="448" height="252" src="https://www.youtube.com/embed/PddREbkO3xU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="media-body">
-            <h5 class="mt-0">Let's Learn: Python If Statements</h5>
-              Python
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Python If Statements" src="https://www.youtube.com/embed/PddREbkO3xU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="col-sm-12">
+        <div class="media-body">
+          <a href="{% url 'python_if_statements' %}"><h5 class="mt-0">Let's Learn: Python If Statements</h5></a>
+            Let's talk about python if statements.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <br>
+
 <!---- Begin: Python While Loops Section --->
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col-sm-12">
         <div class="media">
-          <iframe class="align-self-center mr-3" alt="Python While Loops" width="448" height="252" src="https://www.youtube.com/embed/NRyFiuf7VnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="media-body">
-            <h5 class="mt-0">Let's Learn: Python While Loops</h5>
-              Python
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Python While Loops" src="https://www.youtube.com/embed/NRyFiuf7VnA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="col-sm-12">
+        <div class="media-body">
+          <a href="{% url 'python_while_loops' %}"><h5 class="mt-0">Let's Learn: Python While Loops</h5></a>
+            Let's talk about python while loops.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <br>
+
 <!---- Begin: Python For Loops Section --->
 <div class="container-fluid">
-    <div class="row">
-      <div class="col">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col-sm-12">
         <div class="media">
-          <iframe class="align-self-center mr-3" alt="Python For Loops" width="448" height="252" src="https://www.youtube.com/embed/TAObIFEdgrM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="media-body">
-            <h5 class="mt-0">Let's Learn: Python For Loops</h5>
-              Python
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Python For Loops" src="https://www.youtube.com/embed/TAObIFEdgrM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
+    <div class="col-md-6">
+      <div class="col-sm-12">
+        <div class="media-body">
+          <a href="{% url 'python_for_loops' %}"><h5 class="mt-0">Let's Learn: Python For Loops</h5></a>
+            Let's talk about python for loops.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<br>
+
 <!---- END: Tutorial Videos  --->
 {% endblock %}

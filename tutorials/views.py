@@ -11,3 +11,40 @@ def python_home(request):
 
 def whylearnpython(request):
     return render(request, 'tutorials/python/WhyLearnPython.html')
+
+def python_syntax(request):
+    return render(request, 'tutorials/python/syntax.html')
+
+def python_variables_dtypes(request):
+    return render(request, 'tutorials/python/variables_datatypes.html')
+
+def python_composite_data_types(request):
+    return render(request, 'tutorials/python/composite_data_types.html')
+
+def python_strings(request):
+    return render(request, 'tutorials/python/strings.html')
+
+def python_numbers(request):
+    return render(request, 'tutorials/python/numbers.html')
+
+def python_lists(request):
+    return render(request, 'tutorials/python/lists.html')
+
+def python_tuples(request):
+    return render(request, 'tutorials/python/tuples.html')
+
+def python_sets(request):
+    return render(request, 'tutorials/python/sets.html')
+
+def python_dictionaries(request):
+    return render(request, 'tutorials/python/dictionaries.html')
+
+def python_if_statements(request):
+    return render(request, 'tutorials/python/if_statements.html')
+
+def python_while_loops(request):
+    return render(request, 'tutorials/python/while_loops.html')
+
+def python_for_loops(request):
+    return render(request, 'tutorials/python/for_loops.html')
+    

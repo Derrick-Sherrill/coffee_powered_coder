@@ -54,6 +54,9 @@ def python_for_loops(request):
 def numpy_home(request):
     return render(request, 'tutorials/numpy.html')
 
+def numpy_arrays(request):
+    return render(request, 'tutorials/numpy/arrays.html')
+
 
 
 ### BEGIN PANDAS LINKS BEGIN PANDAS LINKS #####

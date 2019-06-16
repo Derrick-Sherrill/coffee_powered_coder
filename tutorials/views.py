@@ -63,6 +63,9 @@ def numpy_indexing(request):
 def numpy_array_math(request):
     return render(request, 'tutorials/numpy/array_math.html')
 
+def numpy_broadcasting(request):
+    return render(request, 'tutorials/numpy/broadcasting.html')
+
 
 
 ### BEGIN PANDAS LINKS BEGIN PANDAS LINKS #####

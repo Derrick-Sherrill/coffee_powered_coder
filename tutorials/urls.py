@@ -23,6 +23,7 @@ urlpatterns = [
     path('numpy/arrays/', views.numpy_arrays, name='numpy_arrays'),
     path('numpy/indexing/', views.numpy_indexing, name='numpy_indexing'),
     path('numpy/array-math/', views.numpy_array_math, name='numpy_array_math'),
+    path('numpy/broadcasting/', views.numpy_broadcasting, name='numpy_broadcasting'),
     # Begin Pandas LINKS
     path('pandas/', views.pandas_home, name='pandas_home'),
     path('pandas/dataframes/', views.pandas_dataframes, name='pandas_dataframes'),

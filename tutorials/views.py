@@ -59,3 +59,6 @@ def numpy_home(request):
 ### BEGIN PANDAS LINKS BEGIN PANDAS LINKS #####
 def pandas_home(request):
     return render(request, 'tutorials/pandas.html')
+
+def pandas_dataframes(request):
+    return render(request, 'tutorials/pandas/dataframes.html')

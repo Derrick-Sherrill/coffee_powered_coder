@@ -62,3 +62,6 @@ def pandas_home(request):
 
 def pandas_dataframes(request):
     return render(request, 'tutorials/pandas/dataframes.html')
+
+def pandas_select_data(request):
+    return render(request, 'tutorials/pandas/select_data.html')

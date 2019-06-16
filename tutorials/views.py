@@ -57,6 +57,9 @@ def numpy_home(request):
 def numpy_arrays(request):
     return render(request, 'tutorials/numpy/arrays.html')
 
+def numpy_indexing(request):
+    return render(request, 'tutorials/numpy/indexing.html')
+
 
 
 ### BEGIN PANDAS LINKS BEGIN PANDAS LINKS #####

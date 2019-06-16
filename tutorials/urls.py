@@ -21,6 +21,7 @@ urlpatterns = [
     # Begin NumPy Links
     path('numpy/', views.numpy_home, name='numpy_home'),
     path('numpy/arrays/', views.numpy_arrays, name='numpy_arrays'),
+    path('numpy/indexing/', views.numpy_indexing, name='numpy_indexing'),
     # Begin Pandas LINKS
     path('pandas/', views.pandas_home, name='pandas_home'),
     path('pandas/dataframes/', views.pandas_dataframes, name='pandas_dataframes'),

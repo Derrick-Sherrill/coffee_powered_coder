@@ -65,3 +65,6 @@ def pandas_dataframes(request):
 
 def pandas_select_data(request):
     return render(request, 'tutorials/pandas/select_data.html')
+
+def pandas_multiindex(request):
+    return render(request, 'tutorials/pandas/multiindex.html')

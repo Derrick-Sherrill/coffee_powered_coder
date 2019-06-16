@@ -47,4 +47,9 @@ def python_while_loops(request):
 
 def python_for_loops(request):
     return render(request, 'tutorials/python/for_loops.html')
-    
+
+
+### BEGIN NUMPY LINKS BEGIN NUMPY LINKS BEGIN NUMPY LINKS ####
+
+def numpy_home(request):
+    return render(request, 'tutorials/numpy.html')

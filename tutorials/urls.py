@@ -18,4 +18,6 @@ urlpatterns = [
     path('if-statements/', views.python_if_statements, name='python_if_statements'),
     path('while-loops/', views.python_while_loops, name='python_while_loops'),
     path('for-loops/', views.python_for_loops, name='python_for_loops'),
+    # Begin NumPy Links
+    path('numpy/', views.numpy_home, name='numpy_home'),
 ]

@@ -80,3 +80,6 @@ def pandas_select_data(request):
 
 def pandas_multiindex(request):
     return render(request, 'tutorials/pandas/multiindex.html')
+
+def pandas_concat(request):
+    return render(request, 'tutorials/pandas/concat.html')

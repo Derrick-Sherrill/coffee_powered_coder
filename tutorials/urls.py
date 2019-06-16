@@ -29,4 +29,5 @@ urlpatterns = [
     path('pandas/dataframes/', views.pandas_dataframes, name='pandas_dataframes'),
     path('pandas/select-data/', views.pandas_select_data, name='pandas_select_data'),
     path('pandas/multiindex/', views.pandas_multiindex, name='pandas_multiindex'),
+    path('pandas/concat/', views.pandas_concat, name='pandas_concat'),
 ]

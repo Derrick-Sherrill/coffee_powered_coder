@@ -60,6 +60,9 @@ def numpy_arrays(request):
 def numpy_indexing(request):
     return render(request, 'tutorials/numpy/indexing.html')
 
+def numpy_array_math(request):
+    return render(request, 'tutorials/numpy/array_math.html')
+
 
 
 ### BEGIN PANDAS LINKS BEGIN PANDAS LINKS #####

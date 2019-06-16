@@ -20,4 +20,6 @@ urlpatterns = [
     path('for-loops/', views.python_for_loops, name='python_for_loops'),
     # Begin NumPy Links
     path('numpy/', views.numpy_home, name='numpy_home'),
+    # Begin Pandas LINKS
+    path('pandas/', views.pandas_home, name='pandas_home'),
 ]

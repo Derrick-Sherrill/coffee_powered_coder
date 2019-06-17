@@ -31,5 +31,6 @@ urlpatterns = [
     path('pandas/multiindex/', views.pandas_multiindex, name='pandas_multiindex'),
     path('pandas/concat/', views.pandas_concat, name='pandas_concat'),
     # Begin REQUESTS LINKS
+    path('requests/', views.requests_home, name='requests_home'),
     path('requests/real-time-stock-market-analysis/', views.requests_real_time_stock_analysis, name='requests_real_time_stock_analysis'),
 ]

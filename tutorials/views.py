@@ -88,6 +88,6 @@ def pandas_concat(request):
 ### BEGIN REQUESTS LINKS BEGIN REQUESTS VIEWS ####
 def requests_home(request):
     return render(request, 'tutorials/requests.html')
-    
+
 def requests_real_time_stock_analysis(request):
-    return render(request, 'tutorials/requests/real_time_stock_analysis/html')
+    return render(request, 'tutorials/requests/real_time_stock_analysis.html')

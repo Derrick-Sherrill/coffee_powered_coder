@@ -29,32 +29,46 @@
   <br>
   <div class="row">
     <div class="col-sm-8">
-      <h2>Example of concatenating two series together:</h2>
-      <script src="https://gist.github.com/Derrick-Sherrill/0857c9e10da4ddcb33a736418068befa.js"></script>
+      <h2>Loading Stock Market Data from Alpha Vantage API:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/30c4c5fe9d9f9ae5b0ad15b0597c0e42.js"></script>
     </div>
     <div class="col-sm-4">
-      <h3>Concatenating two series:</h3>
+      <h3>Loading real time stock market data:</h3>
       <ul>
-        <li>We have access to the axis keyword which allows us to concatenate along the column or index</li>
-        <li>We can create a longer series from two series, or a dataframe depending on how we concatenate the series</li>
-        <li>Order of the concatenation is important when creating a dataframe (if it matters to you.)</li>
+        <li>First we'll need the API key from AlphaVantage to do this, head over to their home page and click "Get API Key"</li>
+        <li>Once we have the key we need to pass that to the function to get it to work.</li>
+        <li>We also have specified that we want the output data in the data structure of a pandas dataframe</li>
+        <li>Then we use the get intraday function to pull intraday data from whichever stock we specify the ticker for.</li>
       </ul>
     </div>
   </div>
-  <!--- End Example --->
+  <!--- Continue Example --->
   <br>
   <div class="row">
     <div class="col-sm-8">
-      <h2>Example of concatenating two DataFrames together:</h2>
-      <script src="https://gist.github.com/Derrick-Sherrill/87203a1a4ca82a98ae0d200883a5a8db.js"></script>
-    </div>
+      <h2>Saving Data in Real Time:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/1d3ae4b288049eeff5b9ea0cc8a79bb6.js"></script>
     <div class="col-sm-4">
-      <h3>Concatenating two dataframes:</h3>
+      <h3>Saving data to excel file in real time:</h3>
       <ul>
-        <li>The first dataframe we concatenate with is the dataframe we read in from an external excel file</li>
-        <li>The second dataframe is one in which we create from two pandas series</li>
-        <li>We concatenate these along the axis=1, the column headings</li>
-        <li>We can use the KWARG of 'keys' to create a MultiIndexed data structure object which allows us to pull out the previous dataframes (before the concatenation)</li>
+        <li>This was the actual request of this video: How can we save stock market data to an excel spreadsheet in real time</li>
+        <li>We can create an infinite loop to do this.</li>
+        <li>Lastly, pandas already has a built in function to export dataframes to excel spreadsheets.</li>
+      </ul>
+    </div>
+  </div>
+  <!--- Continue Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Analyze Data in Real Time:</h2>
+<script src="https://gist.github.com/Derrick-Sherrill/35a454113a37adfc603c3373e69f6fd5.js"></script>
+    <div class="col-sm-4">
+      <h3>Real Time Data Analysis:</h3>
+      <ul>
+        <li>Here we're covering a basic example of how we can start doing operations on this data in real time</li>
+        <li>In this example, we're looking for the volatility of the stock each given minute</li>
+        <li>The video suggests we can create some type of alert to signal we should perform an action when a given thresehold is reached.</li>
       </ul>
     </div>
   </div>
@@ -62,7 +76,7 @@
 <div class="row">
   <div class="col-md-12">
     <h2>The full code from this video:</h2>
-    <script src="https://gist.github.com/Derrick-Sherrill/4a83e6b8583ea04ca82660a96f19ec36.js"></script>
+    <script src="https://gist.github.com/Derrick-Sherrill/057f9569dc0fc37267ae26933accce64.js"></script>
 </div>
 </div>
 
@@ -71,8 +85,8 @@
     <img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Previous_Logo.png" class="img-fluid" alt="Pandas Previous Logo">
   </div>
   <div class="col-sm-8">
-    <p class= 'text-center'> View this code on <a href="https://github.com/Derrick-Sherrill/Coffee-Powered/blob/master/concat.py">GitHub</a></p>
-    <p class='text-center'>View the docs on this topic:  <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html">Pandas Concatenation</a> </p>
+    <p class= 'text-center'> View this code on <a href="https://gist.github.com/Derrick-Sherrill/e88cb1da8fcc2ed0e42bc02ace9efe63">GitHub</a></p>
+    <p class='text-center'>View the docs on this topic:  <a href="https://www.alphavantage.co/documentation/">Alpha Vantage</a> </p>
   </div>
   <div class="col-sm-2">
     <img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Next_Logo.png" class="img-fluid" alt="">

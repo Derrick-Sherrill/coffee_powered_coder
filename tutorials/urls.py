@@ -4,6 +4,7 @@ from tutorials import views
 
 urlpatterns = [
     path('', views.index, name='tutorials_home'),
+    # Begin Python Links
     path('python/', views.python_home, name='python_home'),
     path('whylearnpython/', views.whylearnpython, name='why_learn_python'),
     path('syntax/', views.python_syntax, name='python_syntax'),

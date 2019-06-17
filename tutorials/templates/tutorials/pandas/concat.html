@@ -32,7 +32,12 @@
       <script src="https://gist.github.com/Derrick-Sherrill/0857c9e10da4ddcb33a736418068befa.js"></script>
     </div>
     <div class="col-sm-4">
-      Here we're creating two series objects using the pd.Series function. Then we're joining those two series together in various ways. first we're concatenating one series onto the end of another, creating a longer series. Then we join them together to create a dataframe. Notice how the third example has them concatenated in a different order. This is important whenever concatenating series if you desire them to be in certain columns in your pandas dataframe.
+      <h3>Concatenating two series:</h3>
+      <ul>
+        <li>We have access to the axis keyword which allows us to concatenate along the column or index</li>
+        <li>We can create a longer series from two series, or a dataframe depending on how we concatenate the series</li>
+        <li>Order of the concatenation is important when creating a dataframe (if it matters to you.)</li>
+      </ul>
     </div>
   </div>
 

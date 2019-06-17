@@ -1,6 +1,7 @@
 {% extends 'home/base.html' %}
 
 {% block content %}
+<title>Pandas concat() Tutorial </title>
 
 <div class="container-fluid">
 <br>
@@ -24,8 +25,20 @@
     </div>
   </div>
 
+
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Example of concatenating two series together:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/0857c9e10da4ddcb33a736418068befa.js"></script>
+    </div>
+    <div class="col-sm-4">
+      Here we're creating two series objects using the pd.Series function. Then we're joining those two series together in various ways. first we're concatenating one series onto the end of another, creating a longer series. Then we join them together to create a dataframe. Notice how the third example has them concatenated in a different order. This is important whenever concatenating series if you desire them to be in certain columns in your pandas dataframe.
+    </div>
+  </div>
+
 <div class="row">
   <div class="col-md-12">
+    <h2>The full code from this video:</h2>
     <script src="https://gist.github.com/Derrick-Sherrill/4a83e6b8583ea04ca82660a96f19ec36.js"></script>
 </div>
 </div>

@@ -1,10 +1,19 @@
 {% extends 'home/base.html' %}
 
 {% block content %}
+{% load static %}
+
 <title>Pandas concat() Tutorial </title>
 
 <div class="container-fluid">
-<br>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-sm-12">
+        <h2 class="text-center">Pandas Concatenation</h2>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-12">
       <div class="col-sm-12">
@@ -16,16 +25,8 @@
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-md-12">
-      <div class="col-sm-12">
-        <h2 class="text-center">Pandas Concatenation</h2>
-      </div>
-    </div>
-  </div>
-
-
+  <!--- First Example --->
+  <br>
   <div class="row">
     <div class="col-sm-8">
       <h2>Example of concatenating two series together:</h2>
@@ -40,6 +41,23 @@
       </ul>
     </div>
   </div>
+  <!--- End Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Example of concatenating two DataFrames together:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/87203a1a4ca82a98ae0d200883a5a8db.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Concatenating two dataframes:</h3>
+      <ul>
+        <li>The first dataframe we concatenate with is the dataframe we read in from an external excel file</li>
+        <li>The second dataframe is one in which we create from two pandas series</li>
+        <li>We concatenate these along the axis=1, the column headings</li>
+        <li>We can use the KWARG of 'keys' to create a MultiIndexed data structure object which allows us to pull out the previous dataframes (before the concatenation)</li>
+      </ul>
+    </div>
+  </div>
 
 <div class="row">
   <div class="col-md-12">
@@ -47,6 +65,32 @@
     <script src="https://gist.github.com/Derrick-Sherrill/4a83e6b8583ea04ca82660a96f19ec36.js"></script>
 </div>
 </div>
+
+<div class="row">
+  <div class="col-md-12">
+    <p class='text-center'>View the docs on this topic:     <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html">Pandas Concatenation</a> </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <h3 class='text-center'>Project videos using this concept:</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+
+  </div>
+  <div class="col-sm-4">
+
+  </div>
+  <div class="col-sm-4">
+
+  </div>
+</div>
+
+
 </div>
 
 

@@ -1,0 +1,104 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<title>Real Time Stock Market Analysis</title>
+
+<div class="container-fluid">
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-sm-12">
+        <h2 class="text-center">real Time Stock Market Analysis with AlphaVantage</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-sm-12">
+        <div class="media">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Real Time Stock Market Analysis" src="https://www.youtube.com/embed/d2kXmWzfS0w" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- First Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Example of concatenating two series together:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/0857c9e10da4ddcb33a736418068befa.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Concatenating two series:</h3>
+      <ul>
+        <li>We have access to the axis keyword which allows us to concatenate along the column or index</li>
+        <li>We can create a longer series from two series, or a dataframe depending on how we concatenate the series</li>
+        <li>Order of the concatenation is important when creating a dataframe (if it matters to you.)</li>
+      </ul>
+    </div>
+  </div>
+  <!--- End Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Example of concatenating two DataFrames together:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/87203a1a4ca82a98ae0d200883a5a8db.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Concatenating two dataframes:</h3>
+      <ul>
+        <li>The first dataframe we concatenate with is the dataframe we read in from an external excel file</li>
+        <li>The second dataframe is one in which we create from two pandas series</li>
+        <li>We concatenate these along the axis=1, the column headings</li>
+        <li>We can use the KWARG of 'keys' to create a MultiIndexed data structure object which allows us to pull out the previous dataframes (before the concatenation)</li>
+      </ul>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-12">
+    <h2>The full code from this video:</h2>
+    <script src="https://gist.github.com/Derrick-Sherrill/4a83e6b8583ea04ca82660a96f19ec36.js"></script>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-sm-2">
+    <img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Previous_Logo.png" class="img-fluid" alt="Pandas Previous Logo">
+  </div>
+  <div class="col-sm-8">
+    <p class= 'text-center'> View this code on <a href="https://github.com/Derrick-Sherrill/Coffee-Powered/blob/master/concat.py">GitHub</a></p>
+    <p class='text-center'>View the docs on this topic:  <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html">Pandas Concatenation</a> </p>
+  </div>
+  <div class="col-sm-2">
+    <img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Next_Logo.png" class="img-fluid" alt="">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <h3 class='text-center'>Project videos using this concept:</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+
+  </div>
+  <div class="col-sm-4">
+
+  </div>
+  <div class="col-sm-4">
+
+  </div>
+</div>
+
+
+</div>
+
+
+{% endblock %}

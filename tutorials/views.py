@@ -83,3 +83,8 @@ def pandas_multiindex(request):
 
 def pandas_concat(request):
     return render(request, 'tutorials/pandas/concat.html')
+
+
+### BEGIN REQUESTS LINKS BEGIN REQUESTS VIEWS ####
+def requests_real_time_stock_analysis(request):
+    return render(request, 'tutorials/requests/real_time_stock_analysis/html')

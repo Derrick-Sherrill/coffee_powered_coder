@@ -66,6 +66,14 @@ def numpy_array_math(request):
 def numpy_broadcasting(request):
     return render(request, 'tutorials/numpy/broadcasting.html')
 
+### BEGIN TENSORFLOW LINKS BEGIN TENSORFLOW Links
+
+def tensorflow_home(request):
+    return render(request, 'tutorials/tensorflow.html')
+
+def tensorflow_linear_regression(request):
+    return render(request, 'tutorials/tensorflow/linear_regression.html')
+
 
 
 ### BEGIN PANDAS LINKS BEGIN PANDAS LINKS #####

@@ -1,0 +1,46 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+<title>Tensorflow Tutorials - Coffee Powered Coder</title>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-10">
+        <h1 class="display-4">TensorFlow Tutorials</h1>
+        <p class="lead">Tensorflow, one of the largest open source libraries used for machine learning, is beyond useful with predictive analytics and artifical intelligence</p>
+        </div>
+      <div class="col-2">
+          <img src="https://s3.amazonaws.com/coffee-powered-bucket/images/Tensorflow_Vector.png" class='img-fluid' alt="Tensorflow Logo">
+      </div>
+    </div>
+  </div>
+</div>
+<!---- Start Tutorial Videos --->
+<!---- Begin: DataFrames Section --->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="col-sm-12">
+        <div class="media">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Tensorflow Linear Regression" src="https://www.youtube.com/embed/2BusGJyn77E" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="col-sm-12">
+        <div class="media-body">
+          <a href="{% url 'tensorflow_linear_regression' %}"><h5 class="mt-0">Tensorflow Linear Regression</h5></a>
+          In this video we'll get started with Tensorflow machine learning and look at the first simple use case: linear regression
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!---- Begin: Indexing Section --->
+
+
+<!---- END: Tutorial Videos  --->
+{% endblock %}

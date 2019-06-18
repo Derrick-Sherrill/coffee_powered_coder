@@ -25,6 +25,9 @@ urlpatterns = [
     path('numpy/indexing/', views.numpy_indexing, name='numpy_indexing'),
     path('numpy/array-math/', views.numpy_array_math, name='numpy_array_math'),
     path('numpy/broadcasting/', views.numpy_broadcasting, name='numpy_broadcasting'),
+    # BEGIN TENSORFLOW LINKS BEGIN TENSORFLOW LINKS
+    path('tensorflow/', views.tensorflow_home, name='tensorflow_home'),
+    path('tensorflow/linear-regression/', views.tensorflow_linear_regression, name='tensorflow_linear_regression'),
     # Begin Pandas LINKS
     path('pandas/', views.pandas_home, name='pandas_home'),
     path('pandas/dataframes/', views.pandas_dataframes, name='pandas_dataframes'),

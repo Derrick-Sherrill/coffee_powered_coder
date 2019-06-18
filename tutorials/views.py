@@ -84,6 +84,14 @@ def pandas_multiindex(request):
 def pandas_concat(request):
     return render(request, 'tutorials/pandas/concat.html')
 
+### BEGIN PYTHON AUTOMATION EXCEL LINKS #####
+
+def automate_excel_home(request):
+    return render(request, 'tutorials/excel_automation.html')
+
+def automate_excel_calculations(request):
+    return render(request, 'tutorials/excel_automation/calculations.html')
+
 
 ### BEGIN REQUESTS LINKS BEGIN REQUESTS VIEWS ####
 def requests_home(request):

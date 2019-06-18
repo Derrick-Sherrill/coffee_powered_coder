@@ -31,6 +31,9 @@ urlpatterns = [
     path('pandas/select-data/', views.pandas_select_data, name='pandas_select_data'),
     path('pandas/multiindex/', views.pandas_multiindex, name='pandas_multiindex'),
     path('pandas/concat/', views.pandas_concat, name='pandas_concat'),
+    # Begin Excel Python Automation LINKS
+    path('automate-excel/', views.automate_excel_home, name='automate_excel_home'),
+    path('automate-excel/calculations/', views.automate_excel_calculations, name='automate_excel_calculations'),
     # Begin REQUESTS LINKS
     path('requests/', views.requests_home, name='requests_home'),
     path('requests/real-time-stock-market-analysis/', views.requests_real_time_stock_analysis, name='requests_real_time_stock_analysis'),

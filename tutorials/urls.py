@@ -40,4 +40,5 @@ urlpatterns = [
     # Begin REQUESTS LINKS
     path('requests/', views.requests_home, name='requests_home'),
     path('requests/real-time-stock-market-analysis/', views.requests_real_time_stock_analysis, name='requests_real_time_stock_analysis'),
+    path('requests/cartesian-products/', views.requests_cartesian_products, name='requests_cartesian_products'),
 ]

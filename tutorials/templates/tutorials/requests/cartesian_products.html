@@ -1,0 +1,103 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<title>Cartesian Product</title>
+
+<div class="container-fluid">
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-sm-12">
+        <h2 class="text-center">How to Create Cartesian Products in Python</h2>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-sm-12">
+        <div class="media">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" alt="Real Time Stock Market Analysis" src="https://www.youtube.com/embed/d2kXmWzfS0w" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--- First Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Manual Creation of Cartesian Product</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/b6137b6bcb296eaae36f5a05cdfff6eb.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Manual Creation of Cartesian Product: </h3>
+      <ul>
+        <li>We can break down a cartesian product to its rawest form, just the combination of each element in the set in a product set</li>
+        <li>We can get the desired outcome by using multiple for loops</li>
+        <li>This works, however python for loops are notoriously clunky and present a challenge in efficienctly doing this operation whenever the data set size increases.</li>
+      </ul>
+    </div>
+  </div>
+  <!--- Continue Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Cartesian Product with itertools</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/18ab86139f5eb83b67125f1695c41420.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Clean Cartesian Product:</h3>
+      <ul>
+        <li>The itertools package gives us tools which behave a lot nicer computationly compared to multiple nested for loops.</li>
+        <li>Here we're just using the product function to achieve the desired result, which we would of previous done with three for loops ( one for each set you're wishing to include in your cartesian product)</li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <!--- Full code example ---->
+<div class="row">
+  <div class="col-md-12">
+    <h2>The full code from this video:</h2>
+    <script src="https://gist.github.com/Derrick-Sherrill/7b556f87f4c97d93ce1fc26cada06cd1.js"></script>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-2">
+    <a href="{% url 'requests_real_time_stock_analysis' %}"><img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Previous_Logo.png" class="img-fluid" alt="Pandas Previous Logo"></a>
+  </div>
+  <div class="col-sm-8">
+    <p class= 'text-center'> View this code on <a href="https://github.com/Derrick-Sherrill/DerrickSherrill.com/blob/master/cp_ex.py">GitHub</a></p>
+    <p class='text-center'>View the docs on this topic:  <a href="https://docs.python.org/3/library/itertools.html#itertools.product">Itertools Product Function</a> </p>
+  </div>
+  <div class="col-sm-2">
+    <img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Next_Logo.png" class="img-fluid" alt="">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <h3 class='text-center'>Project videos using this concept:</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+
+  </div>
+  <div class="col-sm-4">
+
+  </div>
+  <div class="col-sm-4">
+
+  </div>
+</div>
+
+
+</div>
+
+
+{% endblock %}

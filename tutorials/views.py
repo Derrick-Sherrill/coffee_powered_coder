@@ -109,4 +109,4 @@ def requests_real_time_stock_analysis(request):
     return render(request, 'tutorials/requests/real_time_stock_analysis.html')
 
 def requests_cartesian_products(request):
-    return render(request, 'tutorials/requests/cartesian-products.html')
+    return render(request, 'tutorials/requests/cartesian_products.html')

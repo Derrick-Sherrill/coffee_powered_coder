@@ -12,6 +12,9 @@ def python_home(request):
 def whylearnpython(request):
     return render(request, 'tutorials/python/WhyLearnPython.html')
 
+def python_download(request):
+    return render(request, 'tutorials/python/download.html')
+
 def python_syntax(request):
     return render(request, 'tutorials/python/syntax.html')
 

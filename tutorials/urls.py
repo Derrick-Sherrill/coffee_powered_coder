@@ -7,6 +7,7 @@ urlpatterns = [
     # Begin Python Links
     path('python/', views.python_home, name='python_home'),
     path('whylearnpython/', views.whylearnpython, name='why_learn_python'),
+    path('download/', views.python_download, name='python_download'),
     path('syntax/', views.python_syntax, name='python_syntax'),
     path('variables-and-data-types/', views.python_variables_dtypes, name='python_variables_dtypes'),
     path('composite-data-types/', views.python_composite_data_types, name='python_composite_dtypes'),

@@ -1,31 +1,96 @@
-
 {% extends 'home/base.html' %}
 
 {% block content %}
+{% load static %}
+
+<title>Python Syntax and Commenting</title>
 
 <div class="container-fluid">
-<br>
+  <br>
+  </div>
   <div class="row">
     <div class="col-md-12">
       <div class="col-sm-12">
         <div class="media">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" alt="Python Syntax" src="https://www.youtube.com/embed/XIJq8odelLw" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" alt="Python Syntax and Commenting Tutorial" src="https://www.youtube.com/embed/JkWh9bBdy-k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
-
   <div class="row">
-    <div class="col-md-12">
-      <div class="col-sm-12">
-        <h2 class="text-center">Python Syntax</h2>
-      </div>
+    <div class="col-sm-12">
+      <h2 class="text-center">Python Tutorial : Syntax and Commenting</h2>
     </div>
   </div>
+  <!--- First Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Python Commenting:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/b08ce4020409e640842823823414ba2e.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Talking through comments</h3>
+      <ul>
+        <li>Comments are denoted with the # symbol.</li>
+        <li>Whenever you place these numbers signs at the beginning of your line, the whole line is not read. If you place them after code on a line, then the code will still be read while the comment will not be.</li>
+        <li>Block quotes should be done how the example shows, a number sign at the beginning of consecutive lines.</li>
+      </ul>
+    </div>
+  </div>
+  <!--- First Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Python Syntax:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/b3f557e1f1d070349ce10956e3fc5c7e.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Talking through syntax</h3>
+      <ul>
+        <li>Indentations should be done whenever a new block of code depends on the above action.</li>
+        <li>Examples of this are things such as if, while, and for statements.</li>
+        <li>Each block of code should have its own indentation level</li>
+        <li>two nested if statements would mean two nested indentation levels. (8 total spaces over.)</li>
+      </ul>
+    </div>
+  </div>
+  <!--- Continue Example --->
 
+<div class="row">
+  <div class="col-sm-2">
+    <a href="{% url 'python_download' %}"><img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Previous_Logo.png" class="img-fluid" alt="Pandas Previous Logo"></a>
+  </div>
+  <div class="col-sm-8">
+    <p class='text-center'>View the docs on this topic:  <a href="https://docs.python.org/3/reference/index.html">Python Language Reference</a> </p>
+  </div>
+  <div class="col-sm-2">
+    <a href="{% url 'python_variables_dtypes' %}"><img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Next_Logo.png" class="img-fluid" alt=""></a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <h3 class='text-center'>Project videos using this concept:</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-4">
+
+  </div>
+  <div class="col-sm-4">
+
+  </div>
+  <div class="col-sm-4">
+
+  </div>
+</div>
 
 
 </div>
+
+
 {% endblock %}

@@ -2,29 +2,123 @@
 
 {% block content %}
 
+<title>Python Strings Tutorial</title>
+
 <div class="container-fluid">
-<br>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-sm-12">
+        <h2 class="text-center">Introduction to Python Strings</h2>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-12">
       <div class="col-sm-12">
         <div class="media">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" alt="Python Strings" src="https://www.youtube.com/embed/O1VGBZ6wvPI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" alt="Python Strings Tutorial Video" src="https://www.youtube.com/embed/7uu9zLNjw7Y" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!--- First Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Python Strings, an Array of Values:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/ddfb5fd0882b48c14727b4baade3b251.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Python Strings as Arrays:</h3>
+      <ul>
+        <li>Python Strings are actually arrays of elements. Each letter is its own value. The entire string then is just the collection of these elements</li>
+        <li>We can see the length of these arrays the same way we can see the length of a composite data type container, by using the len() function.</li>
+        <li>This was designed on purpose this way, as this gives us complete control to very finely be able to edit string type objects. </li>
+        <li>With each letter of a string being it's own value, we can select letters and change them with complete control.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--- Next Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Intentional Arrays, Intentional Control:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/eb98b0d5da744678a6947176678459ae.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Control of Python Strings:</h3>
+      <ul>
+        <li>Since each string is able to be controlled at such a high level, we can pull out specific values of our strings using indexing</li>
+        <li>In this example we're indexing out the first letter of our string using square brackets and then using the index position, in this example 0, to pull the letters out</li>
+        <li>In the video we only take out one letter, but we can do this with slicing s well, which is  method to pull out multiple values.</li>
+        <li>We're also able to do operations on the string as a whole using the str methods that are built into the python package.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--- Next Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Splitting Strings to create more strings:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/f4ba2a615f6a3787c9bfdac3c3969e63.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Creating multiple string objects from one string:</h3>
+      <ul>
+        <li>We also have the ability to create more than one string from a single string. We're doing this here</li>
+        <li>Say for example we have one big long string variable in python - such as a body paragraph of a report, or all the text on a webpage</li>
+        <li>We could take the string and separate it into more bite size strings, stroed in a list container, using the split function</li>
+        <li>We have plenty more functions like this in python, but this is just a brief example of how we can work with strings.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--- Full code example ---->
   <div class="row">
     <div class="col-md-12">
-      <div class="col-sm-12">
-        <h2 class="text-center">Python Strings</h2>
-      </div>
+      <h2>The full code from this video:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/7625caba57a7bc7046aee7f00be2ec41.js"></script>
     </div>
   </div>
 
 
+  <!--- End section --->
+  <div class="row">
+    <div class="col-sm-2">
+      <a href="{% url 'python_composite_dtypes' %}"><img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Previous_Logo.png" class="img-fluid" alt="Pandas Previous Logo"></a>
+    </div>
+    <div class="col-sm-8">
+      <p class= 'text-center'> View this code on <a href="https://github.com/Derrick-Sherrill/Coffee-Powered/blob/master/Beginner%20Python%20Tutorials/strings.py">GitHub</a></p>
+      <p class='text-center'>View the docs on this topic:  <a href="https://docs.python.org/3/">Python Documentation</a> </p>
+    </div>
+    <div class="col-sm-2">
+      <a href="{% url 'python_numbers' %}"><img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Next_Logo.png" class="img-fluid" alt="Pandas Next Logo"></a>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h3 class='text-center'>Project videos using this concept:</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+  </div>
 
 </div>
 

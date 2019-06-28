@@ -2,29 +2,94 @@
 
 {% block content %}
 
+<title>Variables and Data Types in Python Tutorial</title>
+
 <div class="container-fluid">
-<br>
+  <br>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="col-sm-12">
+        <h2 class="text-center">Creating Variables and Using Data Types in Python</h2>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-md-12">
       <div class="col-sm-12">
         <div class="media">
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" alt="Python Variables and Data Types" src="https://www.youtube.com/embed/bc4b8RqtW8k" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="embed-responsive-item" alt="Variables and Data Types in Python" src="https://www.youtube.com/embed/5h5V-6aKi44" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!--- First Example --->
+  <br>
   <div class="row">
-    <div class="col-md-12">
-      <div class="col-sm-12">
-        <h2 class="text-center">Python Variables and Data Types</h2>
-      </div>
+    <div class="col-sm-8">
+      <h2>Creating Variables in Python:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/a714bbfe235e2cf1bcce305cb8af07ef.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>How to create variables in python:</h3>
+      <ul>
+        <li>Variable names are lower cased, words separated by underscores, and can include numbers as the first letter.</li>
+        <li>We create variables by setting some word(s) equal (=) to a value</li>
+        <li>Once we set this variable equal to a value in our script, python will do all the work and assign a data type to this newly created variable.</li>
+      </ul>
+    </div>
+  </div>
+  <!--- Continue Example --->
+  <br>
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>A note on some data types available to us:</h2>
+      <script src="https://gist.github.com/Derrick-Sherrill/7f639cd8b7ecdac04b28552e5b908a41.js"></script>
+    </div>
+    <div class="col-sm-4">
+      <h3>Talking through data types:</h3>
+      <ul>
+        <li>In python we have various different data types which hold different types of values.</li>
+        <li>In this example, we're talking about strings, different number types, and bools, but there are plenty more.</li>
+        <li>Data types are automatically created by the python back end whenever we create the variables in the script. All we have to do is create the value of the variable, python will look at this value, and create a data type is thinks is best fitting to that value</li>
+        <li>We can control this python inferrence however, by using casting. This is just declaring the values data type whenever we create the variable or after variable creation for mutable objects.</li>
+      </ul>
+    </div>
+  </div>
+  <!--- End Section --->
+
+  <div class="row">
+    <div class="col-sm-2">
+      <a href="{% url 'python_syntax'}"><img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Previous_Logo.png" class="img-fluid" alt="Pandas Previous Logo"></a>
+    </div>
+    <div class="col-sm-8">
+      <p class= 'text-center'> View this code on <a href="https://github.com/Derrick-Sherrill/Coffee-Powered">GitHub</a></p>
+      <p class='text-center'>View the docs on this topic:  <a href="https://docs.python.org/3/">Alpha Vantage</a> </p>
+    </div>
+    <div class="col-sm-2">
+      <a href="{% url 'python_composite_dtypes'}"><img src="https://coffee-powered-bucket.s3.amazonaws.com/images/Pandas_Next_Logo.png" class="img-fluid" alt="Pandas Next Logo"></a>
     </div>
   </div>
 
+  <div class="row">
+    <div class="col-12">
+      <h3 class='text-center'>Project videos using this concept:</h3>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4">
+
+    </div>
+  </div>
 
 </div>
 

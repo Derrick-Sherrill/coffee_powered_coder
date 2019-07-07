@@ -7,6 +7,9 @@ def arduino_home(request):
 def arduino_hello_world(request):
     return render(request, 'tutorials/arduino/helloworld.html')
 
+def arduino_blinking_light(request):
+    return render(request, 'tutorials/arduino/blinking_light.html')
+
 ##### PYTHON LINKS #####
 def index(request):
     return render(request, 'tutorials/index.html')

@@ -7,6 +7,7 @@ urlpatterns = [
     # Begin Arduino Links
     path('arduino/', views.arduino_home, name='arduino_home'),
     path('ardunio/hello-world/', views.arduino_hello_world, name='arduino_hello_world'),
+    path('ardunio/blinking-light/', views.arduino_blinking_light, name='ardunio_blinking_light'),
     # Begin Python Links
     path('python/', views.python_home, name='python_home'),
     path('whylearnpython/', views.whylearnpython, name='why_learn_python'),

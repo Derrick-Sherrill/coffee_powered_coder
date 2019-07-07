@@ -1,8 +1,13 @@
 from django.shortcuts import render
 
-# Create your views here.
+### ARDUINO LINKS #####
+def arduino_home(request):
+    return render(request, 'tutorials/arduino.html')
 
+def arduino_hello_world(request):
+    return render(request, 'tutorials/arduino/helloworld.html')
 
+##### PYTHON LINKS #####
 def index(request):
     return render(request, 'tutorials/index.html')
 
